@@ -1,0 +1,3 @@
+﻿ZIP形式	C:\Program Files\WinRAR\WinRAR.exe	a -afzip -ibck -m5 -r "{0}.zip" *.*
+7z形式	C:\Program Files\7-Zip\7z.exe	a -mx9 "{0}.7z"
+RAR形式	C:\Program Files\WinRAR\WinRAR.exe	a -afrar -ibck -m5 -r "{0}.rar" *.*
