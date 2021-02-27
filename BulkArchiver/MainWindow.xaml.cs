@@ -1,29 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using BulkArchiver.Models;
+using MahApps.Metro.Controls;
+using Microsoft.WindowsAPICodePack.Dialogs;
+using System;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using BulkArchiver.Models;
-using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace BulkArchiver
 {
     /// <summary>
     /// MainWindow.xaml の相互作用ロジック
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : MetroWindow
     {
         private readonly Archivers archivers = new Archivers();
         private readonly ObservableCollection<Folder> folders = new ObservableCollection<Folder>();
